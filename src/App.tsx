@@ -1,7 +1,13 @@
+import { Container } from './components/Container'
+import EstiloGlobal from './styles'
+
 function App() {
   return (
     <div className="App">
-      <h1>teste</h1>
+      <>
+        <EstiloGlobal />
+        <Container />
+      </>
     </div>
   )
 }
