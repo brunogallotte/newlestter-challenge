@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 
-export const BoxForm = styled.div`
+export const BoxForm = styled.form`
   width: 376px;
   height: 162px;
   margin-left: 64px;
@@ -10,6 +10,19 @@ export const Label = styled.label`
   font-size: 12px;
   font-weight: bold;
   line-height: 150%;
+`
+
+export const ValidMail = styled.p`
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--Vermellion, #ff6155);
+  line-height: 150%;
+  text-align: right;
+`
+
+export const BoxLabel = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
 
 export const Input = styled.input`
@@ -22,6 +35,10 @@ export const Input = styled.input`
   padding-left: 24px;
   border-radius: 8px;
   border: 1px solid var(--grey-25, rgba(25, 24, 43, 0.25));
+
+  &:focus {
+    opacity: 1;
+  }
 `
 
 export const Button = styled.button`
