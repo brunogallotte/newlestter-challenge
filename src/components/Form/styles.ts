@@ -6,6 +6,7 @@ export const BoxForm = styled.form`
   margin-left: 64px;
 
   @media (max-width: 768px) {
+    width: 327px;
     margin-top: 36px;
     display: flex;
     flex-direction: column;
@@ -20,8 +21,8 @@ export const BoxLabel = styled.div`
   margin-left: 8px;
 
   @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-between;
+    max-width: 327px;
+    flex-direction: row;
   }
 `
 
@@ -31,7 +32,8 @@ export const Label = styled.label`
   line-height: 150%;
 
   @media (max-width: 768px) {
-    text-align: left;
+    width: 327px;
+    flex-direction: row;
   }
 `
 

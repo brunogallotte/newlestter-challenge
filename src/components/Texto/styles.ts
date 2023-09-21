@@ -6,7 +6,7 @@ export const TextBox = styled.div`
   margin-bottom: 36px;
 
   @media (max-width: 768px) {
-    width: 327px;
+    max-width: 327px;
     margin-top: 0;
     display: flex;
     flex-direction: column;
