@@ -13,6 +13,16 @@ export const Card = styled.div`
     width: 400px;
     height: 593px;
   }
+
+  div {
+    @media (max-width: 768px) {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `
 
 export const Box = styled.div`
@@ -20,4 +30,14 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    height: 100%;
+  }
+`
+export const ContainerMobile = styled.div`
+  > svg {
+    width: 102%;
+    height: auto;
+  }
 `

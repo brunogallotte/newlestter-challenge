@@ -13,6 +13,10 @@ const EstiloGlobal = createGlobalStyle`
 
   body {
     background-color: #36384D;
+
+    @media (max-width: 768px) {
+      background-color: #fff;
+    }
   }
 `
 

@@ -1,11 +1,12 @@
 import { useState } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 import { BoxForm, BoxLabel, Button, Input, Label, ValidMail } from './styles'
 
 export const Form = () => {
   const [email, setEmail] = useState('')
   const [registered, setRegistered] = useState(false)
   const [error, setError] = useState(false)
+  const navigate = useNavigate()
 
   function handleEmailChange(event) {
     setEmail(event.target.value)
@@ -18,6 +19,8 @@ export const Form = () => {
 
     setRegistered(true)
     setError(false)
+
+    navigate('/sucess')
   }
 
   function verificaEmail() {
