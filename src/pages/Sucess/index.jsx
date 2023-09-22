@@ -9,7 +9,9 @@ const Sucess = () => (
   <Box>
     <EstiloGlobal />
     <CardSucess>
-      <ImageSucess />
+      <div>
+        <ImageSucess />
+      </div>
       <TitleSucess>Thanks for subscribing!</TitleSucess>
       <DescriptionSucess>
         A confirmation email has been sent to <span>ash@loremcompany.com</span>.
