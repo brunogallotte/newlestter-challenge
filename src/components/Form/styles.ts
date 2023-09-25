@@ -18,11 +18,10 @@ export const BoxForm = styled.form`
 export const BoxLabel = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-left: 8px;
 
   @media (max-width: 768px) {
+    justify-content: space-between;
     max-width: 327px;
-    flex-direction: row;
   }
 `
 
@@ -33,7 +32,6 @@ export const Label = styled.label`
 
   @media (max-width: 768px) {
     width: 327px;
-    flex-direction: row;
   }
 `
 
@@ -43,6 +41,11 @@ export const ValidMail = styled.p`
   color: var(--Vermellion, #ff6155);
   line-height: 150%;
   text-align: right;
+
+  @media (max-width: 768px) {
+    width: 327px;
+    text-align: right;
+  }
 `
 
 export const Input = styled.input`
@@ -55,7 +58,6 @@ export const Input = styled.input`
   padding-left: 24px;
   border-radius: 8px;
   border: 1px solid var(--grey-25, rgba(25, 24, 43, 0.25));
-  margin-left: 8px;
 
   &:focus {
     opacity: 1;

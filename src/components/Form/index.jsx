@@ -52,7 +52,7 @@ export const Form = () => {
         }}
       />
       <Button type="submit" onClick={verificaEmail}>
-        Subscribe to monthly newlestter
+        Subscribe to monthly newsletter
       </Button>
     </BoxForm>
   )

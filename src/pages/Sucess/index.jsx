@@ -1,17 +1,15 @@
 import EstiloGlobal from '../../styles'
-import { BoxButton, CardSucess, TitleSucess } from './styles'
+import { BoxButton, BoxContainer, CardSucess, TitleSucess } from './styles'
 import { Box } from '../../components/Container/styles'
 import { ImageSucess } from '../../components/Images'
 import { DescriptionSucess } from './styles'
 import { Button } from '../../components/Form/styles'
 
 const Sucess = () => (
-  <Box>
+  <BoxContainer>
     <EstiloGlobal />
     <CardSucess>
-      <div>
-        <ImageSucess />
-      </div>
+      <ImageSucess />
       <TitleSucess>Thanks for subscribing!</TitleSucess>
       <DescriptionSucess>
         A confirmation email has been sent to <span>ash@loremcompany.com</span>.
@@ -21,7 +19,7 @@ const Sucess = () => (
         <Button>Dismiss message</Button>
       </BoxButton>
     </CardSucess>
-  </Box>
+  </BoxContainer>
 )
 
 export default Sucess

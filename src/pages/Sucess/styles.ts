@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { Card } from '../../components/Container/styles'
+import { Box, Card } from '../../components/Container/styles'
 import { Title, Description } from '../../components/Texto/styles'
 
 export const CardSucess = styled(Card)`
@@ -11,19 +11,11 @@ export const CardSucess = styled(Card)`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: start;
     width: 327px;
     height: 304px;
+    margin-bottom: 256px;
   }
-
-  div {
-    @media (max-width: 768px) {
-      display: flex;
-      width: 327px;
-      justify-content: flex-start;
-      background-color: red;
-    }
 
     svg {
       width: 64px;
@@ -35,7 +27,6 @@ export const CardSucess = styled(Card)`
       @media (max-width: 768px) {
         margin-left: 0;
         margin-top: 0;
-        justify-content: flex-start;
       }
     }
   }
@@ -66,4 +57,20 @@ export const DescriptionSucess = styled(Description)`
 export const BoxButton = styled.div`
   display: flex;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    position: fixed;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+`
+export const BoxContainer = styled(Box)`
+  @media (max-width: 768px) {
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
 `
